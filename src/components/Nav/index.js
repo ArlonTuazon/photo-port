@@ -1,4 +1,5 @@
 import React from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 const categories = [
     {
@@ -35,14 +36,14 @@ const categories = [
   return (
     <header>
     <h2>
-      <a href="/">
+      <a a data-testid="link" href="/">
         <span role="img" aria-label="camera"> 📸</span> Oh Snap!
       </a>
     </h2>
     <nav>
       <ul className="flex-row">
         <li className="mx-2">
-          <a href="#about">
+          <a data-testid="about" href="#about">
             About me
           </a>
         </li>
